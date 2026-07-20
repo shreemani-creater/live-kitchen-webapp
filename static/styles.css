@@ -1,0 +1,178 @@
+body {
+    background-color: rgb(35, 37, 68);
+}
+
+#topsec {
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)), url(css/topbaner.jpg);
+    border-radius: 6px;
+    box-shadow: 0px 22px 0px rgba(243, 240, 72, 0.678);
+    margin-block-start: 5px;
+}
+
+#logo {
+    inline-size: 170px;
+    block-size: 100px;
+    border-radius: 2px;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    block-size: 40px;
+}
+
+.navbar-brand {
+    text-align: end;
+    margin-block-start: 70px;
+}
+
+button {
+    block-size: 31px;
+    margin-inline-start: 5px;
+    margin-block-start: 55px;
+    background-color: chartreuse;
+    border-radius: 3px;
+}
+
+button :hover {
+    background-color: rgb(250, 82, 82);
+    box-shadow: 8px 3px 8px rgba(248, 248, 47, 0.678);
+}
+
+#myForm {
+    background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(css/bg8.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-block-end: 10px;
+}
+
+#myForm p {
+    color: rgb(254, 254, 254);
+    font-style: italic;
+    font-weight: bolder;
+    text-align: center;
+    margin-block-start: 0%;
+    font-size: large;
+}
+
+.listname {
+    color: rgba(250, 235, 215, 0.38);
+}
+
+/* content IMG */
+.vegi {
+    display: block;
+}
+
+#myForm button {
+    background-color: red;
+    margin: 8px;
+    inline-size: 200px;
+}
+
+.reference {
+    border-inline-start: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.vegimg {
+    /* background-color: aliceblue; */
+    inline-size: 100px;
+    block-size: 100px;
+}
+
+.formenter {
+    display: flexbox;
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    border-width: 1px;
+    border-style: groove;
+    border-color: rgb(70, 111, 132);
+    border-radius: 40px;
+    margin-inline-start: 180px;
+    margin-inline-end: 180px;
+    justify-content: space-evenly;
+}
+
+.formenter input {
+    background-color: rgb(255, 30, 30);
+}
+
+label {
+    color: antiquewhite;
+}
+
+input {
+    block-size: 25px;
+}
+
+/* RESULT */
+#resultsec {
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url(css/bg4.jpg);
+    background-position: top;
+    background-size: cover;
+    min-block-size: 800px;
+    padding: 20px;
+    padding-inline-start: 5px;
+}
+
+#resultsec h2 {
+    color: whitesmoke;
+}
+
+#resultbox {
+    margin: 5px;
+    margin-inline-start: 1px;
+    display: inline-block;
+    border-color: rgb(244, 240, 240);
+    border-width: 2px;
+    border-style: solid;
+}
+
+#resultbox p {
+    color: rgba(209, 197, 197, 0.783) !important;
+    font-weight: 300;
+    word-spacing: 2px;
+    text-align: center;
+    inline-size: 700px;
+}
+
+#resultbox p::first-line {
+    color: rgb(247, 255, 5);
+    font-size: x-large !important;
+}
+
+#resultsec button {
+    background-color: rgb(248, 248, 127);
+    margin: 8px;
+    inline-size: 200px;
+}
+
+#livesection {
+    inline-size: 800px;
+    background-color: rgb(166, 154, 139);
+    border-radius: 10px;
+    margin-block-end: 20px;
+    padding-block-end: 5px;
+}
+
+#livesection p {
+    font-size: larger;
+    font-weight: 400;
+}
+
+#livesection h2 {
+    color: greenyellow;
+    text-decoration: underline;
+}
+
+#livesecbtn {
+    padding-block-start: 5px;
+    display: flex;
+    margin-block-start: 10px;
+    justify-content: center;
+    justify-content: space-evenly;
+}

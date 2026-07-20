@@ -1,0 +1,63 @@
+#topbnr{
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)), url(css/topbaner.jpg) ;
+    border-radius: 6px;
+    box-shadow: 0px 22px 0px rgba(243, 240, 72, 0.678);
+    margin-block-start: 3px;
+}
+#logo{
+    inline-size: 170px;
+    block-size: 100px;
+    border-radius: 2px;
+    justify-content:center;
+}
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    block-size: 80px;
+}
+.navbar-brand{
+    text-align: end;
+    margin-block-start: 70px;
+}
+button{
+    block-size: 31px;
+    margin-inline-start: 5px;
+    margin-block-start: 55px;
+    background-color: chartreuse;
+    border-radius: 3px;
+}
+button :hover{
+    background-color: rgb(246, 242, 242);
+    box-shadow: 8px 3px 8px rgba(248, 248, 47, 0.678);
+}
+/* roll */
+#rollimgtp{
+    inline-size: 380px;
+    block-size: 250px;
+    border-radius: 5px;
+}
+.rollimg{
+    inline-size: 250px;
+    block-size: 200px;
+}
+.ingredients{
+    block-size: 200px;
+    display: flex;
+    justify-content:center;
+}
+.ingredients p{
+    color: blue;
+    margin: 20px;
+    font-weight: 600;
+    font-size: large;
+}
+body{
+    background-color: rgb(70, 54, 33);
+}
+.making{
+    inline-size: 800px;
+    margin-inline-start: 180px;
+    background-color: rgb(215, 203, 203);
+    padding-block-start: 10px;
+    border-radius: 10px;
+}

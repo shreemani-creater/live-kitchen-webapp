@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+</head>
+
+<body>
+    <!-- As a link -->
+    <section id="topsec">
+        <nav class="navbar navbar-light bg-light">
+            <center>
+                <img src="static\css\logo.png" id="logo">
+            </center>
+            <button><a class="homebtn" href="/">Home</a></button>
+        </nav>
+        <center>
+            <h2 style="color: blanchedalmond;margin-block-end: 1px;">LIVE COOKING SELECTION FORM</h2>
+        </center>
+    </section>
+    <!-- First form -->
+    <form method="get" id=myForm>
+        <center>
+            <p class="listname">STARTER -LIST</p>
+            <button><a href="#resultsec" style="color: yellow;">READY yellow</a></button>
+        </center>
+        <div class="reference">
+            <div class="Vegi">
+                <img src="static\css\tomato.png" title="Thakaali" class="vegimg">
+                <p>tomato</p>
+            </div>
+            <div class="Vegi">
+                <img src="static\css\Onion.png" title="vengayam" class="vegimg">
+                <p>onion</p>
+            </div>
+            <div class="vegi">
+                <img src="static\css\Curry-lef.png" title="karuveppilai" class="vegimg">
+                <p>curry leaf</p>
+            </div>
+            <div class="Vegi">
+                <img src="static\css\ginger.png" title="inji" class="vegimg">
+                <p>ginger</p>
+            </div>
+            <div class="Vegi">
+                <img src="static\css\garlic.webp" title="poondu" class="vegimg">
+                <p>garlic</p>
+            </div>
+        </div>
+        <div class="formenter">
+            <label for="key0">Enter Starter:</label>
+            <input type="text" id="key0" name="key0" required value="{{ request.args.get('key0', '') }}">
+            <input type="text" id="key00" name="key00" required value="{{ request.args.get('key00', '') }}">
+            <input type="text" id="key000" name="key000" value="{{ request.args.get('key000', '') }}">
+            <input type="submit" value="Add Starter">
+        </div>
+        <center>
+            <p class="listname">VEGITABLES -LIST </p>
+        </center>
+        <div class="reference">
+            <div class="Vegi">
+                <img src="static\css\carrot.png" title="carrot" class="vegimg">
+                <p>carrot</p>
+            </div>
+            <div class="Vegi">
+                <img src="static\css\potato.png" title="urulai kizhangu" class="vegimg">
+                <p>potato</p>
+            </div>
+            <div class="Vegi">
+                <img src="static\css\cauliflower.png" title="cauliflower" class="vegimg">
+                <p>cauliflower</p>
+            </div>
+            <div class="Vegi">
+                <img src="static\css\beanss.png" title="beans" class="vegimg">
+                <p>beans</p>
+            </div>
+            <div class="Vegi">
+                <img src="static\css\mushrom.png" title="kaalan" class="vegimg">
+                <p>mushroom</p>
+            </div>
+            <div class="Vegi">
+                <img src="static\css\drumstick.webp" title="murungaikai" class="vegimg">
+                <p>drumstick</p>
+            </div>
+            <div class="Vegi">
+                <img src="static\css\Green-Chili.png" title="pacha milagai" class="vegimg">
+                <p>green chili</p>
+            </div>
+        </div>
+        <div class="formenter">
+            <label for="key1">Enter Vegitables:</label>
+            <input type="text" id="key1" name="key1" required value="{{ request.args.get('key1', '') }}">
+            <input type="text" id="key11" name="key11" required value="{{ request.args.get('key11', '') }}">
+            <input type="text" id="key111" name="key111" value="{{ request.args.get('key111', '') }}">
+            <input type="submit" value="Add Vegitables">
+        </div>
+        <center>
+            <p class="listname">MASALA & SPICES POWDER -LIST</p>
+        </center>
+        <div class="reference">
+            <div class="Vegi">
+                <img src="static\css\red-chilli.png" title="Red Chili" class="vegimg">
+                <p>red chili</p>
+            </div>
+            <div class="Vegi">
+                <img src="static\css\kulumbu.png" title="kulumbu milagai powder" class="vegimg">
+                <p>chili mix</p>
+            </div>
+            <div class="Vegi">
+                <img src="static\css\gram.webp" title="garam" class="vegimg">
+                <p>garam</p>
+            </div>
+            <div class="Vegi">
+                <img src="static\css\turmeric-pd.webp" title="manjal" class="vegimg">
+                <p>turmeric</p>
+            </div>
+            <div class="Vegi">
+                <img src="static\css\coriander-pd.webp" title=" malli thool" class="vegimg">
+                <p>coriander</p>
+            </div>
+            <div class="Vegi">
+                <img src="static\css\feenel-pd.png" title="sombu" class="vegimg">
+                <p>fennel</p>
+            </div>
+            <div class="Vegi">
+                <img src="static\css\cumin-pd.png" title="jeeragam " class="vegimg">
+                <p>cumin</p>
+            </div>
+        </div>
+        <div class="formenter">
+            <label for="key2">Enter Powder Masalas:</label>
+            <input type="text" id="key2" name="key2" required value="{{ request.args.get('key2', '') }}">
+            <input type="text" id="key22" name="key22" value="{{ request.args.get('key22', '') }}">
+            <input type="text" id="key222" name="key222" value="{{ request.args.get('key222', '') }}">
+            <input type="submit" value="Add Powder">
+        </div>
+        <center>
+            <p class="listname">OIL & DAIRY Products -LIST</p>
+        </center>
+        <div class="reference">
+            <div class="Vegi">
+                <img src="static\css\peanut-oil.png" title="kadalai ennai" class="vegimg">
+                <p>peanut</p>
+            </div>
+            <div class="Vegi">
+                <img src="static\css\coconut.png" title="thengai ennai" class="vegimg">
+                <p>coconut</p>
+            </div>
+            <div class="Vegi">
+                <img src="static\css\sunflower-oil.png" title="sunflower oil" class="vegimg">
+                <p>sunflower</p>
+            </div>
+            <div class="Vegi">
+                <img src="static\css\nallennai.png" title="nalla ennai" class="vegimg">
+                <p>gingelly</p>
+            </div>
+            <div class="Vegi">
+                <img src="static\css\palm.png" title="palm oil" class="vegimg">
+                <p>palm</p>
+            </div>
+            <div class="Vegi">
+                <img src="static\css\ghee.png" title="neii" class="vegimg">
+                <p>ghee</p>
+            </div>
+            <div class="Vegi">
+                <img src="static\css\butter.png" title="vennai" class="vegimg">
+                <p>butter</p>
+            </div>
+            <div class="Vegi">
+                <img src="static\css\cheese.png" title="cheese" class="vegimg">
+                <p>cheese</p>
+            </div>
+
+        </div>
+
+        <div class="formenter">
+            <label for="key3">Enter Cooking Oils:</label>
+            <input type="text" id="key3" name="key3" required value="{{ request.args.get('key3', '') }}">
+            <input type="text" id="key33" name="key33" value="{{ request.args.get('key33', '') }}">
+            <input type="text" id="key333" name="key333" value="{{ request.args.get('key333', '') }}">
+            <input type="submit" value="Add Oil/Dairy">
+        </div>
+        <center>
+            <p class="listname">RAW SPICES -LIST</p>
+        </center>
+        <div class="reference">
+            <div class="Vegi">
+                <img src="static\css\chilli-dry.png" title="kaaintha milagai" class="vegimg">
+                <p>dry chili</p>
+            </div>
+            <div class="Vegi">
+                <img src="static\css\pepper.png" title="milagu" class="vegimg">
+                <p>pepper</p>
+            </div>
+            <div class="Vegi">
+                <img src="static\css\musterd.png" title="kadugu" class="vegimg">
+                <p>mustard</p>
+            </div>
+            <div class="Vegi">
+                <img src="static\css\clove.png" title="kirambu" class="vegimg">
+                <p>clove</p>
+            </div>
+            <div class="Vegi">
+                <img src="static\css\star.png" title="annachipoo" class="vegimg">
+                <p>star anise</p>
+            </div>
+            <div class="Vegi">
+                <img src="static\css\cinnamon-copy.png" title="pattai" class="vegimg">
+                <p>cinnamon</p>
+            </div>
+            <div class="Vegi">
+                <img src="static\css\bay-leaf.png" title="briyani illai" class="vegimg">
+                <p>bay leaf</p>
+            </div>
+            <div class="Vegi">
+                <img src="static\css\cardomn.png" title="elakkai" class="vegimg">
+                <p>cardamom</p>
+            </div>
+            <div class="Vegi">
+                <img src="static\css\Fennel.png" title="sombu" class="vegimg">
+                <p>fennel</p>
+            </div>
+            <div class="Vegi">
+                <img src="static\css\cumin.png" title="jeeragam" class="vegimg">
+                <p>cumin</p>
+            </div>
+
+        </div>
+
+        <div class="formenter">
+            <label for="key4">Enter Raw Spices:</label>
+            <input type="text" id="key4" name="key4" required value="{{ request.args.get('key4', '') }}">
+            <input type="text" id="key44" name="key44" value="{{ request.args.get('key44', '') }}">
+            <input type="text" id="key444" name="key444" value="{{ request.args.get('key444', '') }}">
+            <input type="submit" value="Add Spices">
+        </div>
+
+    </form>
+    <!-- Display results -->
+    <div id="resultsec">
+        <center><button><a href="#livesection" style="color: rgb(46, 238, 17);font-weight:bolder;">COOK
+                    green</a></button></center>
+        <center>
+            <h2>Starter</h2>
+            <div id="resultbox">
+                <p>{{ message_01 }}</p>
+            </div>
+            <div id="resultbox">
+                <p>{{ message_011 }}</p>
+            </div>
+            <div id="resultbox">
+                <p>{{ message_0111 }}</p>
+            </div>
+            <h2>Vegitables</h2>
+            <div id="resultbox">
+                <p>{{ message_1 }}</p>
+            </div>
+            <div id="resultbox">
+                <p>{{ message_11 }}</p>
+            </div>
+            <div id="resultbox">
+                <p>{{ message_111 }}</p>
+            </div>
+            <h2>Masala/Spices</h2>
+            <div id="resultbox">
+                <p>{{ message_2 }}</p>
+            </div>
+            <div id="resultbox">
+                <p>{{ message_22 }}</p>
+            </div>
+            <div id="resultbox">
+                <p>{{ message_222 }}</p>
+            </div>
+            <h2>Oil/Diry</h2>
+            <div id="resultbox">
+                <p>{{ message_3 }}</p>
+            </div>
+            <div id="resultbox">
+                <p>{{ message_33 }}</p>
+            </div>
+            <div id="resultbox">
+                <p>{{ message_333 }}</p>
+            </div>
+            <h2>Raw Spices</h2>
+            <div id="resultbox">
+                <p>{{ message_4 }}</p>
+            </div>
+            <div id="resultbox">
+                <p>{{ message_44 }}</p>
+            </div>
+            <div id="resultbox">
+                <p>{{ message_444 }}</p>
+            </div>
+        </center>
+    </div>
+    <!-- live section -->
+    <center>
+        <div id="livesection">
+            <div id="livesecbtn">
+                <center><button><a href="#myForm"
+                            style="color: rgb(255, 255, 255);background-color: rgb(255, 8, 8);">SELECTION
+                            red</a></button></center>
+                <center><button><a href="#resultsec" style="color: rgb(0, 0, 0);background-color: yellow;">READY
+                            yellow</a></button></center>
+            </div>
+            <center>
+                <div>
+                    <h2>STEP:1[Starter]</h2>
+                    <p>
+                        Pour <b>'{{key_3}} - {{key_33}}'</b> oil / dairy in pan,<br>
+                        After heating put <b>'{{key_0}} - {{key_00}} - {{key_000}}'</b> in pan,<br>
+                        Saute for 2-3min the starter.
+                    </p>
+                </div>
+                <div>
+                    <h2>STEP:2[Vegitables]</h2>
+                    <P>
+                        Put raw spices <b>'{{key_4}} - {{key_44}}'</b> saute some time,<br>
+                        Put cutted <b>'{{key_1}} - {{key_11}} - {{key_111}}'</b> in pan saute some time,<br>
+                        Vegitables required boiling time,Add glass of water and close the pan,<br>
+                        boiling time will be 3-5min based on vegitables.
+                    </P>
+                </div>
+                <div>
+                    <h2>STEP:3[Masalas]</h2>
+                    <p>
+                        After boiling vegitables,Add powder <b>'{{key_2}} - {{key_22}} - {{key_222}}'</b> masalas in
+                        pan,<br>
+                        Saute 1-2min time,Till masalas will be boiled<br>
+                        Add spices <b>'{{key_444}}'</b> in pan,saute for some time.
+                    </p>
+                </div>
+                <div>
+                    <h2>STEP:4[Salt & Boil ]</h2>
+                    <p>
+                        Add required salt,<br>
+                        Saute till your dish is fully dry of water.
+                    </p>
+                </div>
+                <div>
+                    <h2>STEP:5[Seasoning]</h2>
+                    <p>
+                        Add seasoning ghee/pepper powder/coriander leaf to Sprinkle for good smell,Take of the pan<br>
+                        <b>YOUR SIDE DISH IS READY NOW</b>,Serve Dish.
+                    </p>
+                </div>
+            </center>
+        </div>
+    </center>
+</body>
+
+</html>
