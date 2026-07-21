@@ -4,4 +4,4 @@ wst.html
 __pycache__/
 .env
 main.py
-CSS
+static/css
